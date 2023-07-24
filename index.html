@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Coffee Company </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="imagex/png" href="assets/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <div class="circulo"></div>
+        <header>
+            <a href="#"><img src="assets/logo.png" alt="logo" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="text">
+                <h2>It's not just Coffee<br />It's <span>StarBucks</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#">Saber mais</a>
+            </div>
+            <div class="box">
+                <img src="assets/img1.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="miniatura">
+            <li><img src="assets/thumb1.png" onclick="imgSlider('assets/img1.png'); corCirculo('#174D30')"></li>
+            <li><img src="assets/thumb2.png" onclick="imgSlider('assets/img2.png'); corCirculo('#d66b8a')"></li>
+            <li><img src="assets/thumb3.png" onclick="imgSlider('assets/img3.png'); corCirculo('#9c1472')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="assets/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="assets/instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="assets/twitter.png" alt=""></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function corCirculo(cor) {
+            const circulo = document.querySelector('.circulo');
+            circulo.style.background = cor;
+        }
+    </script>
+</body>
+
+</html>
