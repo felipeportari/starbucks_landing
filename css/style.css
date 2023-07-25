@@ -50,6 +50,7 @@ header ul li a {
     color: #1E3932;
     font-weight: bold;
     margin-left: 40px;
+    text-decoration: none;
 }
 
 .content {
@@ -180,7 +181,7 @@ header ul li a {
         display: none;
     }
 
-    .toggle{
+    .toggle {
         position: relative;
         width: 30px;
         height: 30px;
@@ -193,7 +194,7 @@ header ul li a {
         z-index: 11;
     }
 
-    .toggle.active{
+    .toggle.active {
         position: fixed;
         right: 20px;
         background: url(../assets/close.png);
@@ -202,12 +203,12 @@ header ul li a {
         background-repeat: no-repeat;
     }
 
-    header ul li a{
+    header ul li a {
         font-size: 1.5em;
         margin: 5px 0;
     }
 
-    header ul.navigation.active{
+    header ul.navigation.active {
         position: fixed;
         top: 0;
         left: 0;
@@ -250,7 +251,7 @@ header ul li a {
         max-width: 300px;
     }
 
-    .miniatura li img{
+    .miniatura li img {
         max-width: 40px;
     }
 
@@ -258,7 +259,7 @@ header ul li a {
         clip-path: circle(400px at center bottom);
     }
 
-    .sci li a{
+    .sci li a {
         filter: none;
     }
 }
