@@ -18,8 +18,8 @@
         <div class="circulo"></div>
         <header>
             <a href="#"><img src="assets/logo.png" alt="logo" class="logo"></a>
-            <div class="toggle"></div>
-            <ul>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Menu</a></li>
                 <li><a href="#">Sobre</a></li>
@@ -47,7 +47,8 @@
         </ul>
         <ul class="sci">
             <li><a href="#"><img src="assets/facebook.png" alt=""></a></li>
-            <li><a href="#"><img src="assets/instagram.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/portarin_/" target="_blank"><img src="assets/instagram.png"
+                        alt=""></a></li>
             <li><a href="#"><img src="assets/twitter.png" alt=""></a></li>
         </ul>
     </section>
@@ -60,6 +61,13 @@
         function corCirculo(cor) {
             const circulo = document.querySelector('.circulo');
             circulo.style.background = cor;
+        }
+
+        function toggleMenu() {
+            var menuToggle = document.querySelector('.toggle');
+            var navigation =document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
         }
     </script>
 </body>
